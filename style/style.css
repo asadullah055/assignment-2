@@ -113,6 +113,56 @@ main{
     font-size: 16px;
     color: #6c6c6c;
 }
+/* fifa group */
+.group-containe{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background: rgb(240, 240, 240);
+}
+.fifa-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    justify-content: center;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+.group-card{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px #888;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.group-title{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    color: #18191F;
+}
+.group-flag img{
+    width: 50px;
+}
+.group-flag{
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+.group-team{
+    display: block;
+    font-size: 16px;
+}
 /* fifa team */
  .fifa-team{
      padding-top: 50px;
@@ -127,7 +177,6 @@ main{
     margin: auto;
 
 }
-
 .country-photo img{
     width: 50px;
     height: 50px;
@@ -246,7 +295,11 @@ main{
     .copyright{
         font-size: 15px;
     }
-}
+    .fifa-group{
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+ }
 
 
  /* table device */
@@ -264,4 +317,15 @@ main{
     .players-container{
         grid-template-columns: 1fr 1fr;
     }
+    .fifa-group{
+        grid-column-gap: 25px;
+        
+    }
+    .wrapper{
+        padding-right: 5px;
+    }
+    .group-flag{
+        margin-left: 0;
+    }
+  
  }
