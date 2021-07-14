@@ -1,0 +1,113 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* common fonts */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header star */ 
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2D25A0;
+    color: #fff;
+}
+.container{
+    width: 90%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.banner-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 50px;
+}
+.banner-contant{
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.banner-img img{
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    background-color: #E02C6D;
+    padding: 10px 15px;
+    display: inline;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+}
+.players-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 70px;
+}
+.players{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgb(180 179 179) 0px 0px 9px 3px;
+}
+.player-img{
+    text-align: center;
+}
+.player-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* mobile  */
+@media only screen and (max-width: 688px) {
+    .banner-area{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+    .banner-title{
+        margin-top: 0;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .players-container{
+        grid-template-columns: 1fr;
+    }
+}
+ /* table device */
+ @media only screen and (min-width: 689px) and (max-width:992px){
+     .banner-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-title{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-contant{
+        padding-right: 40px;
+    }
+    .players-container{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
