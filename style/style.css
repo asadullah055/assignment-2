@@ -61,6 +61,11 @@ header{
     display: inline;
     font-size: 16px;
     border-radius: 5px;
+    transition: all 1s;
+}
+.link:hover{
+    color: #E02C6D ;
+    background: #fff;
 }
 .fa-arrow-right{
     margin-left: 10px;
@@ -77,6 +82,7 @@ main{
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     margin-top: 70px;
+    padding-bottom: 50px;
 }
 .players{
     padding: 10px;
@@ -88,8 +94,6 @@ main{
     text-align: center;
     overflow: hidden;
     border-radius: 5px;
-    /* margin-bottom: -5px; */
-    /* border: 1px solid black; */
 }
 .player-img img{
     width: 100%;
@@ -109,12 +113,76 @@ main{
     font-size: 16px;
     color: #6c6c6c;
 }
+/* fifa team */
+ .fifa-team{
+     padding-top: 50px;
+     padding-bottom: 50px;
+     background-color: rgb(240, 240, 240) ;
+ }
+.county{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.country-photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.center-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.country-photo{
+    height: 100%;
+    animation: rotation 60s linear infinite;
+}
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.country-photo img:nth-child(1){
+    top: -20px;
+    left: 45%;
+}
+.country-photo img:nth-child(2){
+    top: 20%;
+    right: 5px;
+}
+.country-photo img:nth-child(3){
+    top: 65%;
+    right: 0;
+}
+.country-photo img:nth-child(4){
+    bottom: -5%;
+    right: 45%;
+}
+.country-photo img:nth-child(5){
+    top: 60%;
+    left: -4%;
+}
+.country-photo img:nth-child(6){
+    top: 17%;
+    left: 0%;
+}
 /* footer area */
 .footer{
     display: flex;
     justify-content: center;
     background-color: rgb(240, 240, 240);
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 80px;
 }
 .footer-container{
@@ -148,6 +216,9 @@ main{
     text-align: center;
     font-size: 18px;
 }
+ 
+ 
+
 /* mobile  */
 @media only screen and (max-width: 688px) {
     .banner-area{
@@ -172,7 +243,9 @@ main{
     .fab{
         font-size: 16px;
     }
-    
+    .copyright{
+        font-size: 15px;
+    }
 }
 
 
