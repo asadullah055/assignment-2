@@ -38,6 +38,17 @@ header{
     font-weight: 700;
     line-height: 80px;
 }
+.banner-img{
+    position: relative;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%   { left:0px; top:0px;}
+  25%  { left:30px; top:0px;}
+  50%  { left:30px; top:30px;}
+  75%  { left:0px; top:30px;}
+  100% { left:0px; top:0px;}
+}
 .banner-img img{
     width: 100%;
 }
@@ -86,7 +97,8 @@ main{
     transition: transform .5s;
 }
 .players:hover .player-img img{
-    transform: scale(1.2); 
+    transform: scale(1.2);
+    cursor: pointer; 
 } 
 .player-name h2{
     font-size: 28px;
@@ -96,6 +108,45 @@ main{
 .playre-info p{
     font-size: 16px;
     color: #6c6c6c;
+}
+/* footer area */
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.footer-container{
+    width: 80%;
+    display: grid;
+    justify-content: center;
+}
+.logo-area img{
+    width: 80%;
+}
+.social-media{
+    text-align: center;
+    margin-top: 25px;
+}
+.icon-link{
+    width: 50px;
+    height: 50px;
+    background-color: #0B0D17;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.fab{
+    color: #969BAB;
+    line-height: 2;
+    font-size: 25px;
+}
+.copyright{
+    text-align: center;
+    font-size: 18px;
 }
 /* mobile  */
 @media only screen and (max-width: 688px) {
@@ -111,7 +162,20 @@ main{
     .players-container{
         grid-template-columns: 1fr;
     }
+    .footer{
+        padding-top: 50px;
+    }
+    .icon-link{
+        height: 30px;
+        width: 30px;
+    }
+    .fab{
+        font-size: 16px;
+    }
+    
 }
+
+
  /* table device */
  @media only screen and (min-width: 689px) and (max-width:992px){
      .banner-area{
