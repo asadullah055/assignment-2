@@ -128,7 +128,7 @@ main{
 
 }
 
-.country-photo img{
+.country-flag img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -144,7 +144,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.country-photo{
+.country-flag{
     height: 100%;
     animation: rotation 60s linear infinite;
 }
@@ -153,27 +153,27 @@ main{
         transform: rotate(360deg);
     }
 }
-.country-photo img:nth-child(1){
+.country-flag img:nth-child(1){
     top: -20px;
     left: 45%;
 }
-.country-photo img:nth-child(2){
+.country-flag img:nth-child(2){
     top: 20%;
     right: 5px;
 }
-.country-photo img:nth-child(3){
+.country-flag img:nth-child(3){
     top: 65%;
     right: 0;
 }
-.country-photo img:nth-child(4){
+.country-flag img:nth-child(4){
     bottom: -5%;
     right: 45%;
 }
-.country-photo img:nth-child(5){
+.country-flag img:nth-child(5){
     top: 60%;
     left: -4%;
 }
-.country-photo img:nth-child(6){
+.country-flag img:nth-child(6){
     top: 17%;
     left: 0%;
 }
@@ -221,6 +221,9 @@ main{
 
 /* mobile  */
 @media only screen and (max-width: 688px) {
+    .players-container{
+        width: 100%;
+    }
     .banner-area{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 50px;
